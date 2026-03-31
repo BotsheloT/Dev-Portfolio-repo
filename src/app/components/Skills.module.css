@@ -1,0 +1,44 @@
+.skillsSection {}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--sand);
+}
+
+.item {
+  padding: 1.75rem 1.5rem;
+  border-right: 1px solid var(--sand);
+  border-bottom: 1px solid var(--sand);
+}
+
+.item:nth-child(3n) {
+  border-right: none;
+}
+
+.item:nth-last-child(-n+3) {
+  border-bottom: none;
+}
+
+.dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--terra);
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--warm-dark);
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 300;
+}

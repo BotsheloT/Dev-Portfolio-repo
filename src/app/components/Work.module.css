@@ -1,0 +1,155 @@
+.work {}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--sand);
+  padding: 2rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--terra-light);
+}
+
+.full {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.year {
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--terra);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.titleLg {
+  font-size: 1.5rem;
+}
+
+.desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.highlights {
+  list-style: none;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.highlights li {
+  font-size: 0.83rem;
+  color: var(--muted);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.highlights li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--terra);
+  font-size: 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.65rem;
+  background: rgba(196, 96, 42, 0.08);
+  color: var(--terra);
+  font-weight: 500;
+}
+
+/* Available card */
+.availableCard {
+  background: var(--warm-dark);
+  border: 1px solid var(--warm-dark);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.availableLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--terra-light);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.availableTitle {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.availableDesc {
+  font-size: 0.875rem;
+  color: rgba(245, 240, 232, 0.55);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.availableCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--cream);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgba(245, 240, 232, 0.3);
+  padding-bottom: 0.3rem;
+  width: fit-content;
+  transition: border-color 0.2s;
+}
+
+.availableCta:hover {
+  border-color: var(--terra-light);
+}

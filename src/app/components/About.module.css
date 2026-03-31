@@ -1,0 +1,58 @@
+.about {}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.pull {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: clamp(1.3rem, 2vw, 1.65rem);
+  line-height: 1.5;
+  color: var(--warm-dark);
+  border-left: 2px solid var(--terra);
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.body {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.body p + p {
+  margin-top: 1rem;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fact {
+  padding: 1.5rem;
+  border: 1px solid var(--sand);
+  background: var(--card-bg);
+}
+
+.factLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--terra);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.factValue {
+  font-size: 0.92rem;
+  color: var(--warm-dark);
+  line-height: 1.6;
+  font-weight: 400;
+}
