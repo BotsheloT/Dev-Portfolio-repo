@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     year: '2024 – Present',
     label: 'Automotive · Marketing platform',
-    title: 'Electric vehicle campaign pages',
+    title: 'Automotive product campaign pages',
     desc: "Frontend work for an automotive client's EV platform. My role was to build and update pages for specific marketing campaigns, and to help reduce technical debt across the codebase — improving maintainability for the team going forward.",
     highlights: [
       'Built and updated campaign-specific landing pages',
