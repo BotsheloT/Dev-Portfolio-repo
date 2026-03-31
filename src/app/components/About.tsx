@@ -2,7 +2,6 @@ import styles from './About.module.css'
 
 const facts = [
   { label: 'Based in',      value: 'Johannesburg, South Africa — open to remote collaboration worldwide' },
-  { label: 'Started coding', value: '2022 — first project built and deployed to Vercel using Next.js' },
   { label: 'Currently',     value: 'Frontend developer working with enterprise Angular applications' },
   { label: 'Strengths',     value: 'Responsive builds · Component architecture · Designer collaboration · Legacy code refactoring' },
 ]
